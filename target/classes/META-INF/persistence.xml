@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="Excredit">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>exam.extra.domain.Artist</class>
+		<class>exam.extra.domain.Director</class>
+		<class>exam.extra.domain.Movie</class>
+		<properties>
+			<property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/Excredit" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="jambo211" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="use_sql_comments" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+
+		</properties>
+	</persistence-unit>
+</persistence>          
